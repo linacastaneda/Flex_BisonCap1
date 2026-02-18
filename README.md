@@ -14,43 +14,6 @@ Herramientas utilizadas:
 - bison 3.8.2  
 - gcc 15.2.1  
 
----
-
-## Estructura del Proyecto
-
-Flex_BisonCap1/
-├── ejemplos/
-│   ├── fb1-1.l
-│   ├── fb1-2.l
-│   ├── fb1-3.l
-│   ├── fb1-4.l
-│   ├── fb1-5.l
-│   └── fb1-5.y
-│
-├── ejercicios/
-│   ├── ej1.l
-│   ├── ej1.y
-│   ├── ej2.l
-│   ├── ej2.y
-│   ├── ej3.l
-│   ├── ej3.y
-│   └── ej6_wc_manual.c
-│
-├── img/
-│   ├── EJ1.jpeg
-│   ├── EJ2.jpeg
-│   ├── EJ3.jpeg
-│   ├── EJEMP1.jpeg
-│   ├── EJEMP2.jpeg
-│   ├── EJEMP3.jpeg
-│   ├── EJEMP4.jpeg
-│   ├── EJEMP5.jpeg
-│   ├── WC_C.jpeg
-│   └── WC_Flex.jpeg
-│
-├── README.md
-└── .gitignore
-
 
 ---
 
@@ -59,13 +22,6 @@ Flex_BisonCap1/
 ### fb1-1 – Word Count
 
 Implementación básica de conteo de líneas, palabras y caracteres usando Flex.
-
-Compilación:
-
-flex fb1-1.l
-gcc lex.yy.c -lfl -o wc_flex
-./wc_flex
-
 
 ---
 
@@ -91,14 +47,6 @@ Implementación de tokens con valores numéricos asociados.
 
 Integración completa entre analizador léxico (Flex) y analizador sintáctico (Bison).
 
-Compilación:
-
-bison -d fb1-5.y
-flex fb1-5.l
-gcc fb1-5.tab.c lex.yy.c -lfl -o fb1-5
-./fb1-5
-
-
 
 ---
 
@@ -122,13 +70,6 @@ Si la línea contiene únicamente un comentario, el scanner no devuelve tokens v
 #### Solución  
 
 Se agregó una regla para permitir líneas vacías:
-
-
-
-calclist:
-/* empty */
-| calclist exp EOL
-| calclist EOL
 
 Imagen de Ejecución
 
