@@ -1,0 +1,28 @@
+# Flex
+lex.yy.c
+
+# Bison
+*.tab.c
+*.tab.h
+
+# Ejecutables
+a.out
+ej1
+ej2
+ej3
+ej6
+wc_manual
+wc_flex
+fb1-2
+fb1-3
+fb1-4
+fb1-5
+
+# Archivos de prueba grandes
+grande.txt
+
+# Objetos
+*.o
+
+# Backups
+*~
