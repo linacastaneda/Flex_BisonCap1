@@ -145,7 +145,7 @@ Ambos scanners reconocen los mismos tipos de tokens en condiciones normales.
 
 Sin embargo, pueden diferir en:
 
-- Manejo de retroceso (lookahead)  
+- Manejo de retroceso
 - Casos límite como entradas mal formadas  
 - Manejo del fin de archivo (EOF)  
 - Implementación interna de la máquina de estados  
