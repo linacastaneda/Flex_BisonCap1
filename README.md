@@ -126,14 +126,7 @@ Imagen de ejecución:
 
 ### Ejercicio 4 – Comparación entre scanner manual y Flex
 
-Ambos scanners reconocen los mismos tipos de tokens en condiciones normales.  
-
-Sin embargo, pueden diferir en:
-
-- Manejo de retroceso
-- Casos límite como entradas mal formadas  
-- Manejo del fin de archivo (EOF)  
-- Implementación interna de la máquina de estados  
+Ambos scanners reconocen los mismos tokens en entradas correctas, pero no son estrictamente equivalentes. Flex garantiza automáticamente el matching más largo mediante un DFA generado, mientras que el scanner escrito a mano depende de la implementación manual del programador, lo que puede producir diferencias en casos límite y EOF.
 
 ---
 
