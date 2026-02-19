@@ -132,16 +132,19 @@ Ambos scanners reconocen los mismos tokens en entradas correctas, pero no son es
 
 ### Ejercicio 5 – Limitaciones de Flex
 
-Flex está basado en expresiones regulares y autómatas finitos, por lo tanto solo puede reconocer lenguajes regulares.
+Flex está basado en expresiones regulares y autómatas finitos deterministas, por lo que solo puede reconocer lenguajes regulares.
 
-No es suficiente para:
+No es suficiente para lenguajes cuya estructura léxica requiere más poder expresivo que el de un autómata finito, como:
 
-- Lenguajes sensibles a indentación (ejemplo: Python)  
-- Estructuras anidadas arbitrarias  
-- Situaciones dependientes de contexto  
-- Lenguajes no regulares  
+Lenguajes sensibles a indentación (por ejemplo, Python).
 
-En estos casos es necesario un parser (Bison).
+Estructuras anidadas arbitrarias en el nivel léxico.
+
+Situaciones donde el reconocimiento de tokens depende del contexto previo.
+
+Lenguajes no regulares.
+
+En estos casos, el análisis léxico requiere mecanismos adicionales como estados más complejos
 
 
 ### Ejercicio 6 – Word Count manual vs Flex
