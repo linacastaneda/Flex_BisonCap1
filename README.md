@@ -135,8 +135,6 @@ Sin embargo, pueden diferir en:
 - Manejo del fin de archivo (EOF)  
 - Implementación interna de la máquina de estados  
 
-Flex genera automáticamente un autómata finito optimizado, mientras que la versión manual depende de lógica condicional explícita.
-
 ---
 
 ### Ejercicio 5 – Limitaciones de Flex
