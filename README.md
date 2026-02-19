@@ -116,22 +116,7 @@ Se agregaron operadores lógicos respetando precedencia:
 3. AND lógico (&&)  
 4. OR lógico (||)  
 
-La precedencia se implementó mediante jerarquía estructural de no terminales:
-
-
-
-expr → or_exp
-or_exp → and_exp
-and_exp → add_exp
-add_exp → mul_exp
-mul_exp → term
-
-
-Esto garantiza evaluación correcta de expresiones como:
-
-
-
-2 + 3 * 4 && 0
+Si se agrega | genera ambiguedad porque  ABS es |.
 
 Imagen de ejecución:
 
